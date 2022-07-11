@@ -9,7 +9,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    val randomInt = (1..6).random()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun roolDice() {
         //Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
+
+        val randomInt = (1..6).random()
         binding.resultText.text = randomInt.toString()
     }
 }
